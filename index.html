@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Geolocation</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <!-- jsFiddle will insert css and js -->
-  </head>
-  <body>
-    <div id="map"></div>
+ <head>
+ <title>OpenLayers Demo</title>
+  <style type="text/css">
+  html, body, #basicMap {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+  }
+ </style>
+<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+   <div id="basicMap"></div>
 
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-  </body>
+<script>
+ init();
+</script>
+</body>
 </html>
